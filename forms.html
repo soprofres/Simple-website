@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The bookshelf's website'</title>
+    </head>
+    <body style="background-color:black">
+
+        <div style="color:white">
+            <form action="phppage.php" method="get"> <!--Note, GET is visible in URL bar, while POST is more secure-->
+                <div>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Type" required> <!--id and for connects label to its input-->
+                </div> <!--name is just a name of 'variable' for a submitted data-->
+                <div>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Type" required>
+                </div>
+                <div>
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="pass" placeholder="Type" maxlength="16" minlength="4" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                </div>
+                <div>
+                    <label for="bdate">Last name:</label>
+                    <input type="date" id="bdate" name="bdate" required> <!--Is there a way to change to dd/mm/yyyy format?-->
+                </div>
+                <div>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="99" value="1" required>
+                </div>
+                <br>
+                <div>
+                    <label for="gender">Gender:</label>
+
+                    <label for="f">female</label>
+                    <input type="radio" id="f" name="gender" value="f" required>
+
+                    <label for="m">male</label>
+                    <input type="radio" id="m" name="gender" value="m" required>
+
+                    <label for="no">prefer not to say</label>
+                    <input type="radio" id="no" name="gender" value="no" required>
+                </div>
+                <div>
+                    <label for="payment">Payment:</label>
+                    <select id="payment" name="payment">
+                        <option value="visa">
+                            visa
+                        </option>
+                        <option value="mastercard">
+                            mastercard
+                        </option>
+                        <option value="giftcard">
+                            giftcard
+                        </option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mood">Are you happy?</label>
+                    <input type="checkbox" id="mood" value="happy">
+                </div>
+                <div>
+                    <input type="reset">
+                </div>
+                <br>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+        <br>
+        <div>
+            <a href="index.html" title="Homepage">Go Home</a>
+        </div>
+    </body>
+</html>

@@ -3,20 +3,47 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" sizes="32x32" href="/website/images/Aha-Soft-Free-Global-Security-CCTV-Camera.32.png"/>
-        <title>The soprofres' website</title>
+        <title>The bookshelf's website</title>
+        <link rel="icon" type="image/x-icon" sizes="32x32" href="/images/Aha-Soft-Free-Global-Security-CCTV-Camera.32.png"/>
+        <meta name="description" content="Personal soprofres or bookshelf website for introduction and other stuff.">
+        <meta name="author" content="soprofres;The bookshelf" ;
+        <meta name="keywords" content="math, mathematics, introduction, soprofres, the_bookshelf, The bookshelf">
     </head>
-    <body>
-        <h1>Welcome to my website!</h1>
+    <body style="background-color: black;">
+        <h1 style="color:white">Welcome to my website!</h1>
         <hr>
         <br>
-        Hi, I'm soprofres or bookshelf. Here will be more stuff in the future.
+        <p style="color: white">
+            Hi, I'm soprofres or bookshelf. Here will be more stuff in the future.
+        </p>
+        <a href="page2.html" title="my 2nd page" style="color:white">Visit my 2nd page.</a>
         <br>
-        <a href="page2.html" title="my 2nd page">Visit my 2nd page.</a>
-        <br>
-        You can find me on:
-        <ul>
-        <!--    <li>
+        <a href="page2.html">
+            <button style="background-color:#444444;color:aquamarine;border-radius:10px">
+                Press me for something unexpected.
+            </button>
+        </a>
+        <button onclick="something()" style="background-color:#333333;color:chartreuse">
+            <span id="a">
+                Click to reveal my fav book
+            </span>
+        </button>
+        
+        <script>
+            function something() {
+                document.getElementById("a").innerHTML = "Metamorphosis by Kafka";
+            }
+        </script>
+        <p>
+            <a href="forms.html" title="forms practice" style="color:white">
+                Page with forms practice.
+            </a>
+        </p>
+        <p style="color:white">
+            You can find me on:
+        </p>
+        <ol type="I">
+            <!--    <li>
                     <a href="https://www.goodreads.com/user/show/178027236-the-bookshelf" target="_blank" title="goes to goodreads">
                         <b>
                             Goodreads
@@ -30,7 +57,7 @@
                     </b>
                 </a>
             </li>
-        <!--    <li>
+            <!--    <li>
                     <b>
                         Discord
                     </b>
@@ -39,27 +66,31 @@
                         the_bookshelf
                     </code>
                 </li> -->
-        </ul>
-        <hr>
-        Some art I made a long time ago.
+        </ol>
         <br>
-        <img src="/website/images/New Piskel-1.png" width="256" alt="pixelart of a tree" border="10">
+
+        <hr>
+        <span style="color:white">
+            Some art I made a long time ago.
+        </span>
+        <br>
+        <img src="/images/New Piskel-1.png" width="256" alt="pixelart of a tree" border="10">
         <br>
         <!--Comment, cellpadding uses negative space-->
-        <table border="10" cellpadding="5" cellspacing="1">
-            <tr>
+        <table border="10" cellpadding="5" cellspacing="1" width="300" heigth="500">
+            <tr bgcolor="lightgrey" align="center">
                 <th>Name of field</th>
                 <th>Thoughts</th>
             </tr>
-            <tr>
+            <tr bgcolor="white" align="center">
                 <td>Mathematics</td>
                 <td>11/10</td>
             </tr>
-            <tr>
+            <tr bgcolor="white" align="center">
                 <td>Literature</td>
                 <td>10/10</td>
             </tr>
-            <tr>
+            <tr bgcolor="white" align="center">
                 <td>
                     Programming/CS
                 </td>
@@ -67,7 +98,7 @@
                     10/10
                 </td>
             </tr>
-            <tr>
+            <tr bgcolor="white" align="center">
                 <td>
                     Physics
                 </td>
@@ -76,11 +107,39 @@
                 </td>
             </tr>
         </table>
-        I wonder what this audio is.
-        <br>
-        <audio controls loop>
-            <source src ="/website/audio/rickroll.mp3">
+        <div style="color:firebrick">
+            <p>
+                somem ehtiejdgndksjfgh hf djgh ldfgkd jfh.
+            </p>
+            <p>
+                dfhdsfhg fhg sdfjgh dsfk.
+            </p>
+        </div>
+        <p style="color:rgb(345, 335, 34)">
+            I wonder what this audio is?
+        </p>
+        <audio controls loop alt="rick roll">
+            <source src="/audio/rickroll.mp3">
             This browser does not show my mp3 audio.
         </audio>
+        <p style="background-color:white;color:black">
+            Some video to test.
+        </p>
+        <!-- <video autoplay loop alt="glitch screen" width="300">
+         <source src="/videos/videoTest.mp4">
+         Doesn't work.
+     </video> -->
+        <span style="color:red">
+            It's not a GIF!!
+        </span>
+        <p>
+            <video controls autoplay muted loop src="/videos/videoTest.mp4" width="200">
+        </p>
+        <span style="color:white"><big>BROOOOO</big></span>
+        <iframe src="https://www.bing.com" width="1000" height="1000">
+    
+                
     </body>
 </html>
+
+<!-- didn't know about span tag yet so i used paragaph tag to style-->
